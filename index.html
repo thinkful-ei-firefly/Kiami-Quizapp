@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stephen Kind's IT Quiz App</title>
+  <meta name="description" content="Test your backcountry, backpacking, and outdoor knowledge">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Bahianita|Barriecito|Roboto+Condensed&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header role="banner">
+    <div class="col-12">
+      <ul>
+        <li>Question: <span class="questionNumber">1</span>/10</li>
+        <li>Lives: <span class="score">3</span></li>
+      </ul>
+    </div>
+  </header>
+  <main role="main">
+    <div class="quizStart">
+      <h1>Will you survive Stephen King's IT?</h1>
+      <button type="button" id="startButton" class="startButton">
+        Good Luck!</button>
+    </div>
+    <div class="questionAnswerForm">
+      <div id="question-0" class="question">
+        <h2>What is the gender of IT revealed to be?</h2>
+        <form>
+          <fieldset>
+            <label class="answerOption">
+              <input type="radio" value="Male" name="answer" required="">
+              <span>Male</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="Female" name="answer" required="">
+              <span>Female</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="Non Binary" name="answer" required="">
+              <span>Non Binary</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="A Clown" name="answer" required="">
+              <span>A Clown</span>
+            </label>
+            <button type="submit" id="submitButton0" class="submitButton">Are You Sure?</button>
+          </fieldset>
+        </form>
+      </div>
+      <div id="correctFeedback0" class="correctFeedback">
+        <p><b>Correct, you get to keep your arm Georgie.</b></p>
+        <button type="button" id="nextButton0" class="nextButton">Next</button>
+      </div>
+      <div id="incorrectFeedback0" class="incorrectFeedback">
+        <p><b>You lose, try again</b><br>Don't be dim IT's <span>Georgie</span></p>
+        <button type="button" id="nextButton0" class="nextButton">Next</button>
+      </div>
+      <div id="question-1" class="question">
+        <h2>Who got their arm torn off?</h2>
+        <form>
+          <fieldset>
+            <label class="answerOption">
+              <input type="radio" value="Bill name=" answer" required="">
+              <span>Bill</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="Bev" name="answer" required="">
+              <span>Bev</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="A neighbor girl" name="answer" required="">
+              <span>A neighbor girl</span>
+            </label>
+            <label class="answerOption">
+              <input type="radio" value="Georgie" name="answer" required="">
+              <span>Georgie</span>
+            </label>
+            <button type="submit" id="submitButton1" class="submitButton">Are You Sure?</button>
+          </fieldset>
+        </form>
+      </div>
+      <div id="correctFeedback1" class="correctFeedback">
+        <p><b>Correct, you get to keep your arm Georgie.</b></p>
+        <button type="button" id="nextButton1" class="nextButton">Next</button>
+      </div>
+      <div id="incorrectFeedback1" class="incorrectFeedback">
+        <p><b>You lose, try again</b><br>Don't be dim IT's <span>Georgie</span></p>
+        <button type="button" id="nextButton1" class="nextButton">Next</button>
+      </div>
+    </div>
+  </main>
+  <script src="IT.js"></script>
+</body>
+
+</html>
